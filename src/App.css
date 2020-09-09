@@ -180,7 +180,7 @@ h3 {
     width: 90%;
   }
   .header {
-    grid-template-rows: 25% 55% 20%;
+    grid-template-rows: 25% 45% 30%;
   }
 }
 

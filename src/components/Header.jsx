@@ -4,7 +4,7 @@ import splashImg from '../img/humberBridge.jpg';
 const Header = () => {
   const dragDown = () => {
     window.scrollTo({
-      top: window.innerHeight,
+      top: window.outerHeight,
       left: 0,
       behavior: 'smooth',
     });

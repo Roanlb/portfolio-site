@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import ImageViewer from './ImageViewer';
-// import projectData from '../projectData/projectData';
 
 class BigProject extends Component {
   render() {
     const project = this.props.project;
 
-    console.log(project.id, 'id in bigproject');
-    console.log(project.images[0], 'main image in big project');
-
     return (
-      <div className="singleBox">
-        <h4>{project.name}</h4>
+      <div
+        className={
+          project.name === 'TrAle' ? 'singleBox trAleBox' : 'singleBox'
+        }
+      >
         <ImageViewer images={project.images} />
-        <p>{project.longDescription}</p>
+
+        <section className="projectInfo">
+          <h3>{project.name}</h3>
+          <p>
+            {project.longDescription}
+            <a href={project.hostedVersion}>{project.hostedVersion}</a>
+          </p>
+          <h5>Built with: {project.builtWith}</h5>
+          <h4 onClick={this.props.resetStateProject}>Less</h4>
+        </section>
       </div>
     );
   }

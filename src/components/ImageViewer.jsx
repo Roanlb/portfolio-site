@@ -26,14 +26,22 @@ class ImageViewer extends Component {
           />
           <img
             src={triangle}
-            alt="a triangle pointing up"
-            className="rightArrow"
+            alt="a triangle pointing right"
+            className={
+              this.state.selection === this.props.images.length - 1
+                ? 'rightArrow obsoleteIcon'
+                : 'rightArrow'
+            }
             onClick={this.changeRight}
           />
           <img
             src={triangle}
-            alt="a triangle pointing up"
-            className="leftArrow"
+            alt="a triangle pointing left"
+            className={
+              this.state.selection === 0
+                ? 'leftArrow obsoleteIcon'
+                : 'leftArrow'
+            }
             onClick={this.changeLeft}
           />
         </div>

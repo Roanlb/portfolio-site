@@ -1,16 +1,27 @@
 p {
   color: black;
   text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
 
 a {
   text-decoration: none;
+  text-overflow: ellipsis;
 }
 
 .App {
   text-align: center;
   margin-bottom: 50px;
+  width: 100%;
 }
+
+/* .backgroundised {
+  filter: blur(2px) brightness(50%);
+} */
 
 .App-logo {
   height: 40vmin;
@@ -39,8 +50,10 @@ a {
 }
 
 .header {
+  height: 100vh;
+  width: 100%;
   display: grid;
-  grid-template-rows: 25% 75%;
+  grid-template-rows: 25% 68% 7%;
 }
 
 .titles {
@@ -49,33 +62,84 @@ a {
   align-self: center;
 }
 
+.viewMyWork {
+  display: table;
+  grid-row: 3;
+  grid-column: 1;
+  background-color: crimson;
+  border: 1px solid black;
+  margin: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: white;
+  font-family: Georgia, Helvetica, sans-serif;
+  align-self: center;
+}
+
+h3 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.about {
+  text-align: left;
+}
+
 .box {
   /* background-color: steelblue; */
   background-color: grey;
-  width: 42%;
   height: auto;
   margin: 10px;
-  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.smallBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .smallBox {
   background-color: grey;
   width: 100px;
   height: 100px;
+  display: grid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .singleBox {
+  position: relative;
+  top: 0;
+
   background-color: grey;
-  width: 80%;
+  width: 85%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  height: auto;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.singleBox > h4,
-.singleBox > p {
-  grid-column: 2;
+.projectInfo > p {
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .trAleBox {
+    display: grid;
+    grid-template-rows: max-content min-content;
+    grid-template-columns: auto auto;
+  }
+  .trAleBox > .projectInfo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  /* .trAleBox > p {
+    grid-column: 2;
+    grid-row: 2;
+  } */
+  .trAleBox > .ImageViewer {
+    grid-column: 1;
+    grid-row: 1/3;
+  }
 }
 
 .icon {
@@ -89,14 +153,30 @@ a {
   margin: 10px;
 }
 
-.boxes {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-around;
-  width: 86%;
+@media only screen and (min-width: 768px) {
+  .boxes {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
+    width: 86%;
+  }
+  .box {
+    width: 42%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    align-items: center;
+  }
+  .box {
+    width: 90%;
+  }
 }
 
 .projectImage {
@@ -105,16 +185,14 @@ a {
   max-width: 90%;
   grid-column: 2;
   grid-row: 1;
-  margin: 0;
+  margin: auto;
 }
 
 .main {
-  /* grid: display; */
   grid-template-columns: 10% 80% 10%;
 }
 
 .about {
-  /* grid-column: 2; */
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -125,61 +203,57 @@ a {
 }
 
 .leftArrow {
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
   transform: rotate(270deg);
-  grid-column: 2;
-  grid-row: 2;
-  position: relative;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .rightArrow {
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
   transform: rotate(90deg);
-  grid-column: 2;
-  grid-row: 2;
-  position: relative;
-  left: 87%;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.obsoleteIcon {
+  visibility: hidden;
 }
 
 .ImageViewer {
   display: grid;
-  grid-template-columns: 5% 90% 5%;
-  grid-template-rows: 47% 6% 47%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 100%;
   grid-column: 2;
+  grid-row: 1;
   margin: auto;
   width: auto;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+}
+
+.cardImg {
+  max-width: 95%;
+  max-height: 400px;
+}
+
+.cardFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardFlex > h4 {
+  margin-top: auto;
+  margin-bottom: auto -1px;
 }
 
 .App-link {
   color: #61dafb;
   transition: transform 0.75s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.6);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

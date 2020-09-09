@@ -14,6 +14,12 @@ class ProjectList extends Component {
     }
   };
 
+  resetStateProject = () => {
+    if (this.state.projectId !== '') {
+      this.setState({ projectId: '' });
+    }
+  };
+
   render() {
     console.log(this.state.projectId, 'state');
     return (
@@ -28,12 +34,6 @@ class ProjectList extends Component {
                 {this.state.projectId === '' && (
                   <ProjectCard
                     project={project}
-                    // id={index}
-                    // name={project.name}
-                    // shortDescription={project.shortDescription}
-                    // builtWith={project.builtWith}
-                    // gitHubLink={project.gitHubLink}
-                    // mainImage={project.mainImage}
                     handleChange={this.handleChange}
                   />
                 )}
@@ -43,7 +43,10 @@ class ProjectList extends Component {
           })}
         </div>
         {this.state.projectId && (
-          <BigProject project={projectData[this.state.projectId]} />
+          <BigProject
+            resetStateProject={this.resetStateProject}
+            project={projectData[this.state.projectId]}
+          />
         )}
       </>
     );

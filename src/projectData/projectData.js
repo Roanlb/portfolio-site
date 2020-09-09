@@ -1,8 +1,8 @@
 import traleImg1 from '../img/trAle/trAleDemo.png';
-import traleImg2 from '../img/trAle/trAleDemo3.png';
-import traleImg3 from '../img/trAle/trAleDemo4.png';
-import traleImg4 from '../img/trAle/trAleDemo5.png';
-import traleImg5 from '../img/trAle/trAleDemo6.png';
+import traleImg2 from '../img/trAle/trAleDemo2.png';
+import traleImg3 from '../img/trAle/trAleDemo3.png';
+import traleImg4 from '../img/trAle/trAleDemo4.png';
+import traleImg5 from '../img/trAle/trAleDemo5.png';
 import beImg1 from '../img/NC BE/NC BE 1.png';
 import beImg2 from '../img/NC BE/NC BE 2.png';
 import beImg3 from '../img/NC BE/NC BE 3.png';
@@ -27,7 +27,8 @@ const projectData = [
     name: 'TrAle',
     shortDescription:
       'A hybrid mobile app where users can see ale trails nearby and track their progress along them',
-    longDescription: 'pokemon',
+    longDescription:
+      'This is the product of my last few weeks at Northcoders where me and a group of students were tasked with creating something relatively independently. We discussed ideas, spiked technologies and settled on an ale trail mobile app built with Ionic React. In the app, users can view a list of trails, select a trail, and then view the trail and pubs along it on a Google Map, and check in to each pub when their geolocation is nearby. When the user taps a pub, information about the pub is displayed. As the user checks into the pubs on a certain trail, their profile is updated with the progress and this can be seen as a progress bar on the profile page. The progress of multiple trails can be stored and displayed on a profile at one time, which can have a profile picture and username. \n \nThis application can be served and run locally by git cloning the GitHub repo and running npm start.',
     builtWith: 'Ionic React, React Router, Axios, Google Maps Platform, CSS3',
     gitHubLink: 'https://github.com/rapture7777/Trale-FE',
     images: [
@@ -63,7 +64,8 @@ const projectData = [
     name: 'NC News Front End',
     shortDescription:
       'A reddit-style news aggregation website including ability to vote on, post, and delete comments',
-    longDescription: 'pokemon',
+    longDescription:
+      "This is my individual front end project for Northcoders. We were tasked with creating a reddit-style news website which could present the articles and comments which were stored in the database and served with the API that we had created previously. In this website, users can see a list of all articles, specify a topic, upvote articles, and click on an article's headline to see the main text and comments. The user can also post their own comments and upvote others' comments. \n \nA hosted version of this site can be visited at: ",
     builtWith: 'React, Reach Router, Axios, CSS3',
     gitHubLink: 'https://github.com/Roanlb/nc_news_fe',
     images: [
@@ -88,13 +90,15 @@ const projectData = [
           "An article page on NC News, showing an article called 'What does Jose Mourinho's handwriting say about his personality?'. The main text is shown below with upvote/downvote buttons. There is a textbox in which to post a comment with a submit button, and comments underneath, each with their own upvote and downvote buttons",
       },
     ],
+    hostedVersion: 'https://roanlb-ncnews.netlify.app/',
   },
   {
     id: 2,
     name: 'NC News Back End',
     shortDescription:
       'A reddit-style news aggregation website including ability to vote on, post, and delete comments',
-    longDescription: 'pokemon',
+    longDescription:
+      'This was my individual back end project for Northcoders. We were tasked with taking data in JSON format and storing it in a relational database, and then creating a REST API which served data from this database. The user can fetch data for articles, a single article, the comments of an article, and a user. The /api/articles endpoint can accept queries of author, topic, sort_by and order. The /api/articles/:article_id/comments endpoint can accept queries of sort_by and order. The /api endpoint provides a full list of all endpoints and requests available, including PATCH, DELETE and POST requests.\n \nA hosted version of this app can be visited at: ',
     builtWith: 'Node.js, Express, Postgres, Knex',
     gitHubLink: 'https://github.com/Roanlb/nc_news_be',
     images: [
@@ -103,13 +107,15 @@ const projectData = [
       { src: beImg3, alt: '' },
       { src: beImg4, alt: '' },
     ],
+    hostedVersion: 'https://roanncnewsserver.herokuapp.com/api',
   },
   {
     id: 3,
     name: 'Blackjack',
     shortDescription:
       'A virtual version of blackjack that can be played in the browser',
-    longDescription: 'pokemon',
+    longDescription:
+      'This was a paired project during my time in Northcoders. We were tasked over three days to create a game app within React. Me and my partner decided on a virtual version of blackjack. Betting is not supported, but the user can enter their name, deal and then choose to hit or stand, with victory, push or defeat declared. \n \nThis application can be served and run locally by git cloning the GitHub repo and running npm start.',
     builtWith: 'React, CSS3',
     gitHubLink: 'https://github.com/rapture7777/blackjack',
     images: [
@@ -126,8 +132,9 @@ const projectData = [
     name: 'Oceanography dataset page',
     shortDescription:
       'A simple dynamic webpage listing oceanography data, completed for a tech test',
-    longDescription: 'pokemon',
-    builtWith: 'PHP, LESS',
+    longDescription:
+      'This was the result of a tech test I completed for a job application. I was given data about oceanography datasets and tasked with creating a page which served this data. I had been learning PHP in my own time before this and wanted to gain experience with other technologies so decided to use PHP and a CSS preprocessor for the first time. The user can click the description header to see a description for a dataset, and can also reorder the datasets by date modified or temporal with a selector.\n \nThis application can be served and run locally by git cloning the GitHub repo and running php -S localhost:9090.',
+    builtWith: 'PHP, Javascript, LESS, LESS watch compiler',
     gitHubLink: 'https://github.com/Roanlb/Ayko-test',
     images: [
       { src: oceanImg1, alt: '' },

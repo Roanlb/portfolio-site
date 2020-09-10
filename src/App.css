@@ -65,18 +65,10 @@ a {
   align-self: center;
 }
 
-.viewMyWork {
-  display: table;
+.chevron {
   grid-row: 3;
-  grid-column: 1;
-  background-color: crimson;
-  border: 1px solid black;
+  transform: rotate(180deg);
   margin: auto;
-  padding-left: 3px;
-  padding-right: 3px;
-  color: white;
-  font-family: Georgia, Helvetica, sans-serif;
-  align-self: center;
 }
 
 h3 {

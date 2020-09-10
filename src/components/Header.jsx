@@ -1,14 +1,8 @@
 import React from 'react';
 import splashImg from '../img/humberBridge.jpg';
+import whiteChevron from '../img/white chevron.svg';
 
 const Header = () => {
-  const dragDown = () => {
-    window.scrollTo({
-      top: window.outerHeight,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
   return (
     <div className="main">
       <header className="header">
@@ -21,9 +15,13 @@ const Header = () => {
           <h1 className="title">Roan Lill-Bovill</h1>
           <h2 className="title">Full stack developer</h2>
         </div>
-        <h2 className="viewMyWork" onClick={dragDown}>
-          View my work
-        </h2>
+        <img
+          className="chevron"
+          height="40px"
+          width="40px"
+          src={whiteChevron}
+          alt="a white chevron pointing down"
+        />
       </header>
     </div>
   );

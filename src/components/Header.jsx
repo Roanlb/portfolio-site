@@ -1,14 +1,13 @@
 import React from 'react';
 import splashImg from '../img/humberBridge.jpg';
 
-const Header = () => {
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+const Header = (aboutRef) => {
   const dragDown = () => {
-    window.scrollTo({
-      top: window.outerHeight,
-      left: 0,
-      behavior: 'smooth',
-    });
+    scrollToRef(aboutRef);
   };
+
   return (
     <div className="main">
       <header className="header">

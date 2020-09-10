@@ -9,10 +9,12 @@ import ProjectList from './ProjectList';
 
 class MainPage extends Component {
   render() {
+    const aboutRef = React.createRef();
+    console.log(aboutRef, 'ref');
     return (
       <>
-        <Header />
-        <About />
+        <Header aboutRef={aboutRef} />
+        <About aboutRef={aboutRef} />
         <ProjectList />
       </>
     );

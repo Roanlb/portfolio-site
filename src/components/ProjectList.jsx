@@ -21,13 +21,11 @@ class ProjectList extends Component {
   };
 
   render() {
-    console.log(this.state.projectId, 'state');
     return (
       <>
         <h2>Projects</h2>
         <div className="boxes">
           {projectData.map((project, index) => {
-            console.log(project.shortDescription);
             return (
               <React.Fragment key={project.id}>
                 {index % 2 === 0 && <div className="break"></div>}

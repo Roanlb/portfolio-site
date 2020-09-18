@@ -1,30 +1,44 @@
-import React from 'react';
-import splashImg from '../img/humberBridge.jpg';
+import React, { Component } from 'react';
 import whiteChevron from '../img/white chevron.svg';
 
-const Header = () => {
-  return (
-    <div className="main">
-      <header className="header">
-        <img
-          src={splashImg}
-          alt='The underneath of a long bridge at dusk. "Humber bridge" by vikwaters is licensed under CC BY-ND 2.0.'
-          className="splash"
-        />
-        <div className="titles">
-          <h1 className="title">Roan Lill-Bovill</h1>
-          <h2 className="title">Full stack developer</h2>
-        </div>
-        <img
-          className="chevron"
-          height="40px"
-          width="40px"
-          src={whiteChevron}
-          alt="a white chevron pointing down"
-        />
-      </header>
-    </div>
-  );
-};
+class Header extends Component {
+  state = {
+    isLoading: true,
+  };
 
+  handleLoadChange = () => {
+    this.state.isLoading && this.setState({ isLoading: false });
+  };
+
+  render() {
+    return (
+      <>
+        {this.state.isLoading && (
+          <div className="loading">
+            <h1>Loading</h1>
+          </div>
+        )}
+        <header
+          className="header"
+          onLoad={this.handleLoadChange}
+          style={
+            this.state.isLoading ? { display: 'none' } : { display: 'grid' }
+          }
+        >
+          <div className="titles">
+            <h1 className="title">Roan Lill-Bovill</h1>
+            <h2 className="title">Full stack developer</h2>
+          </div>
+          <img
+            className="chevron"
+            height="40px"
+            width="40px"
+            src={whiteChevron}
+            alt="a white chevron pointing down"
+          />
+        </header>
+      </>
+    );
+  }
+}
 export default Header;

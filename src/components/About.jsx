@@ -16,16 +16,24 @@ const About = () => {
         and Quantitative Research Methods. After working in retail and pension
         administration, and having enjoyed programming in Stata for data
         analysis, I attended Northcoders to gain further understanding of
-        programming and enter into a tech career.
+        programming and enter into a tech career. Currently, I am looking to
+        find my first paid role in web development.
         <br /> <br />
-        I created several projects at Northcoders and have continued learning
-        and creating afterwards. I am now looking to find my first role in web
-        development. My favourite front end framework is React, which was used
-        to create this page. I am also confident in styling with CSS3 and have
-        used LESS. Since graduating Northcoders I have learned PHP and some
-        Java. <br /> <br />I have experience with both MySQL and PostgreSQL,
-        which I used to create a REST API along with Node.js and Express. I
-        helped to create a hybrid mobile app using Ionic React.
+        I created several projects at Northcoders, and was introduced to pair
+        programming, the use of a Kanban board, and daily stand ups. I have
+        continued learning and creating afterwards. I am broadly interested in
+        programming and development, but have found particular affinity for
+        designing and building responsive and intuitive interfaces. Although I
+        prioritise speed over impressive design, I enjoy exploring different
+        philosophies.
+        <br /> <br />
+        My favourite front end framework is React, which was used to create this
+        page. I am also confident in styling with CSS3 and have used LESS. Since
+        graduating Northcoders I have learned PHP and some Java. I also have
+        experience with both MySQL and PostgreSQL, which I used to create a REST
+        API along with Node.js and Express. I helped to create a hybrid mobile
+        app using Ionic React.
+        <br /> <br />
       </p>
       <div className="smallBoxes">
         <div className="smallBox">
@@ -33,7 +41,7 @@ const About = () => {
             <p>GitHub</p>
             <img
               src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
-              alt=" logo"
+              alt="Github logo"
               className="icon2"
             />
           </a>

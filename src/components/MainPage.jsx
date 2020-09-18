@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import About from './About';
 import ProjectList from './ProjectList';
+// import ReadyToScroll from './ReadyToScroll';
 
 //put a view my work button that scrolls down
 
@@ -14,6 +15,7 @@ class MainPage extends Component {
         <Header />
         <About />
         <ProjectList />
+        {/* <ReadyToScroll /> */}
       </>
     );
   }

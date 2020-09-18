@@ -28,7 +28,7 @@ const projectData = [
     shortDescription:
       'A hybrid mobile app where users can see ale trails nearby and track their progress along them',
     longDescription:
-      'This is the product of my last few weeks at Northcoders where me and a group of students were tasked with creating something relatively independently. We discussed ideas, spiked technologies and settled on an ale trail mobile app built with Ionic React. In the app, users can view a list of trails, select a trail, and then view the trail and pubs along it on a Google Map, and check in to each pub when their geolocation is nearby. When the user taps a pub, information about the pub is displayed. As the user checks into the pubs on a certain trail, their profile is updated with the progress and this can be seen as a progress bar on the profile page. The progress of multiple trails can be stored and displayed on a profile at one time, which can have a profile picture and username. \n \nThis application can be served and run locally by git cloning the GitHub repo and running npm start.',
+      'This is the product of my last few weeks at Northcoders where me and a group of students had to create something together relatively independently of tutors. We discussed ideas, spiked technologies and settled on an ale trail mobile app built with Ionic React. In the app, users can view a list of trails, select a trail, and then view the trail and pubs along it on a Google Map, and check in to each pub when their geolocation is nearby. When the user taps a pub, information about the pub is displayed. As the user checks into the pubs on a certain trail, their profile is updated with the progress and this can be seen as a progress bar on the profile page. The progress of multiple trails can be stored and displayed on a profile at one time, which can have a profile picture and username. \n \nThis application can be served and run locally by git cloning the GitHub repo and running npm start.',
     builtWith: 'Ionic React, React Router, Axios, Google Maps Platform, CSS3',
     gitHubLink: 'https://github.com/rapture7777/Trale-FE',
     images: [
@@ -96,9 +96,9 @@ const projectData = [
     id: 2,
     name: 'NC News Back End',
     shortDescription:
-      'A reddit-style news aggregation website including ability to vote on, post, and delete comments',
+      'A REST API that serves data on articles, comments, users and topics, and can be edited. Supports NC News Front End',
     longDescription:
-      'This was my individual back end project for Northcoders. We were tasked with taking data in JSON format and storing it in a relational database, and then creating a REST API which served data from this database. The user can fetch data for articles, a single article, the comments of an article, and a user. The /api/articles endpoint can accept queries of author, topic, sort_by and order. The /api/articles/:article_id/comments endpoint can accept queries of sort_by and order. The /api endpoint provides a full list of all endpoints and requests available, including PATCH, DELETE and POST requests.\n \nA hosted version of this app can be visited at: ',
+      'This was my individual back end project for Northcoders. For this project we had to take data about topics, articles, users and comments in JSON format and store it in a relational database, and then create a REST API which served data from this database. The API would support the news website which we later on created. The user can fetch data for articles, a single article, the comments of an article, and a user. The /api/articles endpoint can accept queries of author, topic, sort_by and order. The /api/articles/:article_id/comments endpoint can accept queries of sort_by and order. The /api endpoint provides a full list of all endpoints and requests available, including PATCH, DELETE and POST requests.\n \nA hosted version of this app can be visited at: ',
     builtWith: 'Node.js, Express, Postgres, Knex',
     gitHubLink: 'https://github.com/Roanlb/nc_news_be',
     images: [
@@ -131,7 +131,7 @@ const projectData = [
     id: 4,
     name: 'Oceanography dataset page',
     shortDescription:
-      'A simple dynamic webpage listing oceanography data, completed for a tech test',
+      'A simple webpage listing oceanography data, completed for a tech test',
     longDescription:
       'This was the result of a tech test I completed for a job application. I was given data about oceanography datasets and tasked with creating a page which served this data. I had been learning PHP in my own time before this and wanted to gain experience with other technologies so decided to use PHP and a CSS preprocessor for the first time. The user can click the description header to see a description for a dataset, and can also reorder the datasets by date modified or temporal with a selector.\n \nThis application can be served and run locally by git cloning the GitHub repo and running php -S localhost:9090.',
     builtWith: 'PHP, Javascript, LESS, LESS watch compiler',

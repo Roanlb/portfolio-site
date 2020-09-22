@@ -7,6 +7,10 @@ body {
   min-height: -webkit-fill-available;
 }
 
+.myLink {
+  cursor: pointer;
+}
+
 p {
   color: black;
   text-decoration: none;
@@ -129,9 +133,6 @@ h3 {
 
 /* for desktop */
 @media only screen and (min-width: 768px) {
-  .ImageViewer {
-    grid-template-columns: auto 75% auto;
-  }
   .boxes {
     display: inline-flex;
     flex-wrap: wrap;
@@ -146,12 +147,12 @@ h3 {
   }
   .trAleBox {
     display: grid;
-    grid-template-rows: max-content min-content;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto max-content min-content;
+    grid-template-columns: 50% 50%;
   }
   .trAleBox > .projectInfo {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
   }
   .trAleBox > .bigProjectTitle {
     grid-column: 1;
@@ -159,7 +160,8 @@ h3 {
   }
   .trAleBox > .ImageViewer {
     grid-column: 1;
-    grid-row: 1/3;
+    grid-row: 2/4;
+    margin-left: 7px;
   }
   .header {
     grid-template-rows: 25% 67% 8%;
@@ -171,11 +173,34 @@ h3 {
   .projectImage {
     grid-column: 2;
   }
-  .leftArrow {
-    padding: 10px;
+  .singleBox > .ImageViewer > .leftArrow {
+    width: 40%;
+    height: 40%;
   }
-  .rightArrow {
-    padding: 10px;
+  .singleBox > .ImageViewer > .rightArrow {
+    width: 40%;
+    height: 40%;
+  }
+  .trAleBox > .ImageViewer > .leftArrow {
+    width: 65% !important;
+    height: 65% !important;
+  }
+  .trAleBox > .ImageViewer > .rightArrow {
+    width: 65% !important;
+    height: 65% !important;
+  }
+  .trAleBox > .ImageViewer {
+    height: 90vh;
+  }
+  .trAleBox > .ImageViewer > .projectImage {
+    max-height: 100%;
+  }
+  .singleBox > .ImageViewer {
+    max-width: 100%;
+  }
+  .singleBox > .ImageViewer > .projectImage {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -196,23 +221,33 @@ h3 {
   .singleBox {
     width: 95%;
   }
-  .leftArrow {
-    padding: 0;
+  .singleBox > .ImageViewer {
+    height: 100%;
   }
-  .rightArrow {
-    padding: 0;
+  .singleBox > .ImageViewer > .rightArrow {
+    width: 100%;
+    height: 100%;
+  }
+  .singleBox > .ImageViewer > .leftArrow {
+    width: 100%;
+    height: 100%;
   }
   .projectImage {
     grid-column: 1/4;
   }
   .trAleBox > .ImageViewer > .projectImage {
     grid-column: 2 !important;
+    width: auto;
+  }
+  .singleBox > .ImageViewer > .projectImage {
+    max-width: 100%;
+  }
+  .singleBox > .ImageViewer {
+    min-height: 200px;
   }
 }
 
 .projectImage {
-  height: auto;
-  width: 100%;
   grid-row: 1;
   margin: 0;
 }
@@ -228,19 +263,16 @@ h3 {
 }
 
 .leftArrow {
-  max-height: 30px;
-  max-width: 30px;
-  min-width: auto;
-  min-width: auto;
-  transform: rotate(270deg);
+  max-height: 15%;
+  max-width: 75%;
+  transform: rotate(180deg);
   grid-column: 1;
   grid-row: 1;
 }
 
 .rightArrow {
-  height: 30px;
-  width: 30px;
-  transform: rotate(90deg);
+  max-height: 15%;
+  max-width: 75%;
   grid-column: 3;
   grid-row: 1;
 }
@@ -250,13 +282,13 @@ h3 {
 }
 
 .ImageViewer {
+  grid-template-columns: auto 75% auto;
   display: grid;
   grid-template-rows: 100%;
   grid-column: 2;
   grid-row: 1;
   margin: 0;
   width: 100%;
-  height: auto;
   align-items: center;
   justify-items: center;
 }
@@ -285,4 +317,10 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: lightblue;
+}
+
+.imageLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

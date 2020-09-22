@@ -8,19 +8,12 @@ class BigProject extends Component {
   }
 
   scrollToMyRef = () => {
-    console.log(this.myRef, 'myref in scrollto');
     setTimeout(() => {
       window.scrollTo(0, this.myRef.current.offsetTop);
     }, 2);
-    console.log('below scrollto');
-  };
-
-  scrollToTop = () => {
-    window.scrollTo(0, 0);
   };
 
   componentDidMount = () => {
-    console.log(this.myRef, 'func');
     this.scrollToMyRef();
   };
 
@@ -46,7 +39,9 @@ class BigProject extends Component {
             <a href={project.hostedVersion}>{project.hostedVersion}</a>
           </p>
           <h5>Built with: {project.builtWith}</h5>
-          <h4 onClick={this.props.resetStateProject}>Less</h4>
+          <h4 className="myLink" onClick={this.props.resetStateProject}>
+            Less
+          </h4>
         </section>
       </div>
     );

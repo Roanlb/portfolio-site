@@ -34,7 +34,11 @@ class ProjectCard extends Component {
               className="icon2"
             />
           </a>
-          <h4 id={project.id} onClick={this.props.handleChange}>
+          <h4
+            className="myLink"
+            id={project.id}
+            onClick={this.props.handleChange}
+          >
             More
           </h4>
         </div>

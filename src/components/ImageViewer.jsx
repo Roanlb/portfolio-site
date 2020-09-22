@@ -1,21 +1,37 @@
 import React, { Component } from 'react';
-import triangle from '../img/triangle 1.svg';
+import triangle from '../img/triangle-1-right.svg';
 
 function imageLoaded() {
+  return getImage().complete;
+}
+
+function getImage() {
   const image = document.getElementById('currentProjectImage');
-  return image.complete;
+  return image;
 }
 
 class ImageViewer extends Component {
-  state = { selection: 0, loadingPicture: true };
+  state = { selection: 0, loadingPicture: false, height: null };
 
   renderSpinner = () => {
     if (this.state.loadingPicture) {
-      return <h4>Loading</h4>;
+      console.log(this.state.height, 'height');
+      return (
+        <div
+          className="imageLoading"
+          style={{ height: `${this.state.height}px` }}
+        >
+          <h4>Loading</h4>
+        </div>
+      );
     } else {
       return null;
     }
   };
+
+  componentDidMount() {
+    !this.state.height && this.setState({ height: getImage().offsetHeight });
+  }
 
   renderImage = () => {
     return (

@@ -20,19 +20,18 @@ const About = () => {
         find my first paid role in web development.
         <br /> <br />
         I created several projects at Northcoders, and was introduced to pair
-        programming, the use of a Kanban board, and daily stand ups. I have
-        continued learning and creating afterwards. I am broadly interested in
-        programming and development, but have found particular affinity for
-        designing and building responsive and intuitive interfaces. Although I
-        prioritise speed over impressive design, I enjoy exploring different
-        philosophies.
+        programming, the use of a Kanban board, and daily stand ups. I am
+        broadly interested in programming and development, but have found
+        particular affinity for designing and building responsive and intuitive
+        interfaces. Although I prioritise speed over impressive design, I enjoy
+        exploring different philosophies.
         <br /> <br />
         My favourite front end framework is React, which was used to create this
-        page. I am also confident in styling with CSS3 and have used LESS. Since
-        graduating Northcoders I have learned PHP and some Java. I also have
-        experience with both MySQL and PostgreSQL, which I used to create a REST
-        API along with Node.js and Express. I helped to create a hybrid mobile
-        app using Ionic React.
+        page. I am also confident in styling with CSS3 and have used LESS.
+        Having continued working to become a better developer after Northcoders,
+        I learned PHP and some Java. I also have experience with both MySQL and
+        PostgreSQL, which I used to create a REST API along with Node.js and
+        Express. I helped to create a hybrid mobile app using Ionic React.
         <br /> <br />
       </p>
       <div className="smallBoxes">

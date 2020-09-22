@@ -3,8 +3,6 @@ import BigProject from './BigProject';
 import ProjectCard from './ProjectCard';
 import projectData from '../projectData/projectData';
 
-//make a mini database in a separate file, put all the projects in, import the object of projects in, refer to as necessary
-
 class ProjectList extends Component {
   state = { projectId: '' };
 
@@ -40,6 +38,10 @@ class ProjectList extends Component {
             );
           })}
         </div>
+        <p className="websiteInfo">
+          This website's github repo can be found at
+          <a href="roanlb.netlify.app"> roanlb.netlify.app</a>
+        </p>
         {this.state.projectId && (
           <BigProject
             resetStateProject={this.resetStateProject}

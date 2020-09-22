@@ -147,7 +147,7 @@ h3 {
   }
   .trAleBox {
     display: grid;
-    grid-template-rows: auto max-content min-content;
+    grid-template-rows: auto auto;
     grid-template-columns: 50% 50%;
   }
   .trAleBox > .projectInfo {
@@ -160,7 +160,7 @@ h3 {
   }
   .trAleBox > .ImageViewer {
     grid-column: 1;
-    grid-row: 2/4;
+    grid-row: 2;
     margin-left: 7px;
   }
   .header {
@@ -323,4 +323,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.websiteInfo {
+  text-align: left;
+  margin-top: 30px;
 }

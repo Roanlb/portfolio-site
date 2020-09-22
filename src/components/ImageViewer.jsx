@@ -15,7 +15,6 @@ class ImageViewer extends Component {
 
   renderSpinner = () => {
     if (this.state.loadingPicture) {
-      console.log(this.state.height, 'height');
       return (
         <div
           className="imageLoading"

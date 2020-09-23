@@ -107,8 +107,14 @@ h3 {
 }
 
 .singleBox {
-  position: relative;
-  top: 0;
+  background-color: grey;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trAleBox {
   background-color: grey;
   margin: auto;
   padding-top: 10px;
@@ -170,6 +176,9 @@ h3 {
   .singleBox {
     width: 85%;
   }
+  .trAleBox {
+    width: 85%;
+  }
   .projectImage {
     grid-column: 2;
   }
@@ -182,25 +191,26 @@ h3 {
     height: 40%;
   }
   .trAleBox > .ImageViewer > .leftArrow {
-    width: 65% !important;
-    height: 65% !important;
+    width: 65%;
+    height: 65%;
   }
   .trAleBox > .ImageViewer > .rightArrow {
-    width: 65% !important;
-    height: 65% !important;
+    width: 65%;
+    height: 65%;
   }
   .trAleBox > .ImageViewer {
-    height: 90vh;
+    max-height: 90vh;
+    min-height: 530px;
   }
   .trAleBox > .ImageViewer > .projectImage {
     max-height: 100%;
+    max-width: 100%;
   }
   .singleBox > .ImageViewer {
     max-width: 100%;
   }
   .singleBox > .ImageViewer > .projectImage {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
   }
 }
 
@@ -221,8 +231,8 @@ h3 {
   .singleBox {
     width: 95%;
   }
-  .singleBox > .ImageViewer {
-    height: 100%;
+  .trAleBox {
+    width: 95%;
   }
   .singleBox > .ImageViewer > .rightArrow {
     width: 100%;
@@ -236,17 +246,19 @@ h3 {
     grid-column: 1/4;
   }
   .trAleBox > .ImageViewer > .projectImage {
-    grid-column: 2 !important;
+    grid-column: 2;
     width: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   .singleBox > .ImageViewer > .projectImage {
     max-width: 100%;
   }
-  .singleBox > .ImageViewer {
-    min-height: 200px;
-  }
 }
-
+  .trAleBox > .ImageViewer {
+    height: 580px;
+  }
+  
 .projectImage {
   grid-row: 1;
   margin: 0;
@@ -295,7 +307,7 @@ h3 {
 
 .cardImg {
   max-width: 95%;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .cardFlex {

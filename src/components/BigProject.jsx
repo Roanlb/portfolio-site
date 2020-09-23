@@ -27,7 +27,7 @@ class BigProject extends Component {
     return (
       <div
         className={
-          project.name === 'TrAle' ? 'singleBox trAleBox' : 'singleBox'
+          project.name === 'TrAle' ? 'trAleBox' : 'singleBox'
         }
         ref={this.myRef}
       >

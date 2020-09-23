@@ -38,9 +38,6 @@ a {
 .background {
   background-color: lightblue;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .title {
@@ -80,7 +77,6 @@ h3 {
 }
 
 .box {
-  /* background-color: steelblue; */
   background-color: grey;
   height: auto;
   margin: 10px;
@@ -94,7 +90,6 @@ h3 {
 
 .smallBoxes {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -102,7 +97,6 @@ h3 {
   background-color: grey;
   width: 100px;
   height: 100px;
-  display: grid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -198,10 +192,6 @@ h3 {
     width: 65%;
     height: 65%;
   }
-  .trAleBox > .ImageViewer {
-    max-height: 90vh;
-    min-height: 530px;
-  }
   .trAleBox > .ImageViewer > .projectImage {
     max-height: 100%;
     max-width: 100%;
@@ -255,10 +245,10 @@ h3 {
     max-width: 100%;
   }
 }
-  .trAleBox > .ImageViewer {
-    height: 580px;
-  }
-  
+.trAleBox > .ImageViewer {
+  height: 580px;
+}
+
 .projectImage {
   grid-row: 1;
   margin: 0;
@@ -299,7 +289,6 @@ h3 {
   grid-template-rows: 100%;
   grid-column: 2;
   grid-row: 1;
-  margin: 0;
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -307,7 +296,7 @@ h3 {
 
 .cardImg {
   max-width: 95%;
-  max-height: 500px;
+  max-height: 400px;
 }
 
 .cardFlex {

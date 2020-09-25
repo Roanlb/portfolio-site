@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import triangle from '../img/triangle-1-right.svg';
+import triangleRight from '../img/circle-arrow-right-2.svg';
+import triangleLeft from '../img/circle-arrow-left-2.svg';
 
 function imageLoaded() {
   return getImage().complete;
@@ -78,7 +79,7 @@ class ImageViewer extends Component {
           {this.renderSpinner()}
           {this.renderImage()}
           <img
-            src={triangle}
+            src={triangleRight}
             alt="a triangle pointing right"
             className={
               this.state.selection === this.props.images.length - 1
@@ -88,7 +89,7 @@ class ImageViewer extends Component {
             onClick={this.changeRight}
           />
           <img
-            src={triangle}
+            src={triangleLeft}
             alt="a triangle pointing left"
             className={
               this.state.selection === 0

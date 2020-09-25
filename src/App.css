@@ -1,14 +1,6 @@
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
-
-.myLink {
-  cursor: pointer;
 }
 
 p {
@@ -36,7 +28,7 @@ a {
 } */
 
 .background {
-  background-color: lightblue;
+  background: linear-gradient(to bottom right, lightblue 65%, darkblue 100%);
   width: 100%;
 }
 
@@ -80,7 +72,7 @@ h3 {
   background-color: grey;
   height: auto;
   margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
 .builtWith {
@@ -93,11 +85,17 @@ h3 {
   justify-content: space-around;
 }
 
-.smallBox {
-  background-color: grey;
-  width: 100px;
-  height: 100px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.bigButton {
+  background-color: whitesmoke;
+  width: 100px !important;
+  height: 100px !important;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 42px 0 rgba(0, 0, 0, 0.19); */
+  cursor: pointer;
+  /* border: 1px inset grey; */
+}
+
+.bigButton {
+  font-weight: bold;
 }
 
 .singleBox {
@@ -267,9 +265,15 @@ h3 {
 .leftArrow {
   max-height: 15%;
   max-width: 75%;
-  transform: rotate(180deg);
   grid-column: 1;
   grid-row: 1;
+  border: 2px white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.leftArrow:active {
+  transform: scale(0.6);
 }
 
 .rightArrow {
@@ -277,6 +281,12 @@ h3 {
   max-width: 75%;
   grid-column: 3;
   grid-row: 1;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.rightArrow:active {
+  transform: scale(0.6);
 }
 
 .obsoleteIcon {
@@ -329,4 +339,20 @@ h3 {
 .websiteInfo {
   text-align: left;
   margin-top: 30px;
+}
+
+button {
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  border-radius: 2px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+
+button:active {
+  box-shadow: 2px 2px 5px black inset;
 }

@@ -15,7 +15,7 @@ class ProjectCard extends Component {
 
     return (
       <div className="box">
-        <h4>{project.name}</h4>
+        <h3>{project.name}</h3>
         <p>{project.shortDescription}</p>
         <p className="builtWith">Built with: {project.builtWith}</p>
         {this.state.imageLoading && <h4>Loading</h4>}
@@ -28,19 +28,17 @@ class ProjectCard extends Component {
         />
         <div className="cardFlex">
           <a href={project.gitHubLink}>
-            <img
-              src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
-              alt="GitHub logo"
-              className="icon2"
-            />
+            <button>
+              <img
+                src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
+                alt="GitHub logo"
+                className="icon2"
+              />
+            </button>
           </a>
-          <h4
-            className="myLink"
-            id={project.id}
-            onClick={this.props.handleChange}
-          >
-            More
-          </h4>
+          <button onClick={this.props.handleChange} id={project.id}>
+            <h4 id={project.id}>More</h4>
+          </button>
         </div>
       </div>
     );

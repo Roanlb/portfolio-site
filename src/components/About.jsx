@@ -16,7 +16,7 @@ const About = () => {
         and Quantitative Research Methods. After working in retail and pension
         administration, and having enjoyed programming in Stata for data
         analysis, I attended Northcoders to gain further understanding of
-        programming and enter into a tech career. Currently, I am open to
+        programming and enter into a tech career. Currently, I am exploring
         opportunities in web development and other areas.
         <br /> <br />
         I created several projects at Northcoders, and was introduced to pair

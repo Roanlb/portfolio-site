@@ -16,15 +16,14 @@ const About = () => {
         and Quantitative Research Methods. After working in retail and pension
         administration, and having enjoyed programming in Stata for data
         analysis, I attended Northcoders to gain further understanding of
-        programming and enter into a tech career. Currently, I am looking to
-        find my first paid role in web development.
+        programming and enter into a tech career. Currently, I am open to
+        opportunities in web development and other areas.
         <br /> <br />
         I created several projects at Northcoders, and was introduced to pair
         programming, the use of a Kanban board, and daily stand ups. I am
         broadly interested in programming and development, but have found
         particular affinity for designing and building responsive and intuitive
-        interfaces. Although I prioritise speed over impressive design, I enjoy
-        exploring different philosophies.
+        interfaces.
         <br /> <br />
         My favourite front end framework is React, which was used to create this
         page. I am also confident in styling with CSS3 and have used LESS.
